@@ -10,9 +10,9 @@ public class VentanaMosaico extends JFrame {
 
         JPanel panelDatos = new JPanel();
         JPanel panelBienvenido = new JPanel();
+        JPanel panelBotones = new JPanel();
 
         panelBienvenido.setLayout(new BoxLayout(panelBienvenido, BoxLayout.Y_AXIS));
-        JPanel panelBotones = new JPanel();
 
         JButton btnNuevo = new JButton("Nuevo");
         JButton btnConsultar = new JButton("Consultar");
@@ -30,15 +30,13 @@ public class VentanaMosaico extends JFrame {
         JTextArea texAreaBienvenida = new JTextArea("En este panel le damos la bienvenida a la aplicación que, realmente, no hace nada más que aparentar que hace algo");
         texAreaBienvenida.setLineWrap(true);
 
-        Component cajaVacia = Box.createRigidArea(new Dimension(20, 20));
         JButton btnCerrar = new JButton("Cerrar");
         btnCerrar.setAlignmentX(Component.CENTER_ALIGNMENT);
+        Component cajaVacia = Box.createRigidArea(new Dimension(20, 20));
 
         panelBienvenido.add(texAreaBienvenida);
         panelBienvenido.add(cajaVacia);
         panelBienvenido.add(btnCerrar);
-
-        btnCerrar.setHorizontalAlignment(SwingConstants.CENTER);
 
         btnCerrar.addActionListener((ae) -> {
             remove(panelBienvenido);
@@ -50,7 +48,6 @@ public class VentanaMosaico extends JFrame {
             add(panelDatos, BorderLayout.NORTH);
             repaint();
         });
-
 
         add(panelBienvenido);
         add(panelBotones, BorderLayout.SOUTH);

@@ -45,8 +45,7 @@ public class VentanaPrincipal extends JFrame {
 
         setContentPane(panel1);
         setMinimumSize(new Dimension(400,200));
-        pack();
-        setVisible(true);
+         setVisible(true);
 
     }
 
