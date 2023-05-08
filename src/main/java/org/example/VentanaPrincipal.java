@@ -21,8 +21,8 @@ public class VentanaPrincipal extends JFrame {
         setJMenuBar(menu);
         setLocationRelativeTo(null);  // Hace que el JFrame aparezca centrado en la pantalla
 
-        panel1 = new JPanel(new FlowLayout());
-        panel2 = new JPanel(new FlowLayout());
+        panel1 = new JPanel();
+        panel2 = new JPanel();
 
         JButton boton1 = new JButton("Pasar al panel 2");
         JButton boton2 = new JButton("Pasar al panel 1");

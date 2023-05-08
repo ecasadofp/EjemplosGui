@@ -1,7 +1,11 @@
 package org.example;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        new VentanaPrincipal();
+        SwingUtilities.invokeLater(()->new VentanaMosaico());
+        SwingUtilities.invokeLater(()->new VentanaPrincipal());
+
     }
 }
